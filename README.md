@@ -1,5 +1,7 @@
 # 4elmer196.github.io
 
+URL: https://elmer196.github.io/4elmer196.github.io/
+
 Weather app alows users to look up cities and see their current weather as well as the five day forecast
 
 It shows temperature and humidity among other weather patterns
