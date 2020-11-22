@@ -94,11 +94,7 @@ function fetch(){
 
 
             
-        },
-
-        error:function(data){
-            document.getElementById("city").innerHTML = "City not found. Please try again!"
-    }
+        }
 
         
     });
