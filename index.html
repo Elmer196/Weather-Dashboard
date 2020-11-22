@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="container1">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container2">
+        <h2>Search for a City: </h2>
+        <input id="citySearch" type="text"></input>
+        <button id="buttonSearch" type="button">Search</button>  
+        <h1 id="city"></h1>        
+    </div>
+    <div class="container3">
+        <ul class="weather">
+            <li id="temp"></li>
+            <br>
+            <li id="humidity"></li>
+            <br>
+            <li id="windSpeed"></li>
+            <br>
+            <li id="uv"></li>
+            <br>
+        </ul>
+    </div>
+    <div class="container4">
+        <h1>5 Day Forecast</h1>
+    </div> 
+    <div class="container5">
+        <ul class="day1">
+            <li id="date1"><b></b></li>
+            <br>
+            <li id="description1"></li>
+            <br>
+            <li id="temp1"></li>
+            <br>
+            <li id="humidity1"></li>
+        </ul> 
+        <ul class="day2">
+            <li id="date2"><b></b></li>
+            <br>
+            <li id="description2"></li>
+            <br>
+            <li id="temp2"></li>
+            <br>
+            <li id="humidity2"></li>
+        </ul> 
+        <ul class="day3">
+            <li id="date3"><b></b></li>
+            <br>
+            <li id="description3"></li>
+            <br>
+            <li id="temp3"></li>
+            <br>
+            <li id="humidity3"></li>
+        </ul> 
+        <ul class="day4">
+            <li id="date4"><b></b></li>
+            <br>
+            <li id="description4"></li>
+            <br>
+            <li id="temp4"></li>
+            <br>
+            <li id="humidity4"></li>
+        </ul> 
+        <ul class="day5">
+            <li id="date5"><b></b></li>
+            <br>
+            <li id="description5"></li>
+            <br>
+            <li id="temp5"></li>
+            <br>
+            <li id="humidity5"></li>
+        </ul> 
+    </div>
+    <footer>
+        <p><b>Made by Hernan Web Dev.</b></p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
