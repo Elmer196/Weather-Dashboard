@@ -63,6 +63,26 @@
     padding-top: 1%;
 }
 
+.container3 li{
+    width: 20%;
+}
+
+.good{
+    background-color: green;
+}
+
+.moderate{
+    background-color: yellow;
+}
+
+.high{
+    background-color: orange;
+}
+
+.bad{
+    background-color: red;
+}
+
 .container4{
     display: flex;
     justify-content: center;

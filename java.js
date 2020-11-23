@@ -41,8 +41,25 @@ function fetch(){
                 type: "GET",
                 success:function(data){
                     document.getElementById("uv").innerHTML = "UV: " + (data.value);
+                    if(data.value <= 2){
+                        $("#uv").addClass("good");
+                    }
+
+                    else if(data.value >= 2 && data.value <= 5){
+                        $("#uv").addClass("moderate");
                            
                     }
+
+                    else if(data.value >= 5 && data.value <= 7){
+                        $("#uv").addClass("high");
+                           
+                    }
+
+                    else if(data.value >= 7 && data.value <= 13){
+                        $("#uv").addClass("bad");
+                           
+                    }
+                }  
                             
             });
 
@@ -80,7 +97,7 @@ function fetch(){
 
             
         },
-        error: function (request, status, error) {
+        error: function () {
             alert("City not found. Please try again!");
         }
 
