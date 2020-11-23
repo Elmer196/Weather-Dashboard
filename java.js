@@ -13,15 +13,6 @@ $("#buttonSearch").click(function (){
       
     localStorage.setItem('setCity', saveCity); 
 
-    localStorage.setItem('countClicks', 1);
-
-    
-    if(localStorage.getItem('countClicks') == 1){
-        var searchCity = document.getElementById("citySearch").value;
-        localStorage.setItem('setSearch1', searchCity);
-          
-    }
-
     location.reload();
     
   
@@ -88,6 +79,9 @@ function fetch(){
 
 
             
+        },
+        error: function (request, status, error) {
+            alert("City not found. Please try again!");
         }
 
         
