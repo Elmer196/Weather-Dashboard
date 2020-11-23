@@ -7,12 +7,6 @@ const fourDays = moment().add(4,'days').format("MMMM Do YYYY");
 const fiveDays = moment().add(5,'days').format("MMMM Do YYYY");
 
 
-$(document).ready(function(){ 
-    document.getElementById("city1").innerHTML = localStorage.getItem('setSearch1');
-    
-    });
-
-
 $("#buttonSearch").click(function (){
     
     var saveCity = document.getElementById("citySearch").value;
@@ -101,6 +95,11 @@ function fetch(){
 }
 
 fetch();
+
+$(document).ready(function(){ 
+    document.getElementById("city1").innerHTML = localStorage.getItem('setSearch1');
+    
+    });
 
 
 
